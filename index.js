@@ -35,6 +35,14 @@ app.post("/blogs/update/:id", (req, res) => {
   
     res.redirect("/blogs");
   });
+
+app.get("/blogs/delete/:id", (req, res) => {
+    const index = req.params.id;
+  
+    allBlogs.splice(index, 1);
+  
+    res.redirect("/blogs");
+});
   
 
 app.listen(port, ()=>{
