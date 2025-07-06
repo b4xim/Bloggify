@@ -1,7 +1,10 @@
+<%- include("partials/header") %>
+
 <h1>Edit Your Blog</h1>
 <form action="/blogs/update/<%= id %>" method="POST">
 <input type="text" name="author" value="<%= blog.author %>" required>
 <input type="text" name="blog" value="<%= blog.blog %>" required>
 <input type="submit">
 
+<%- include("partials/footer") %>
 

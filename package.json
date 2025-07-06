@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "body-parser": "^2.2.0",
+    "bootstrap": "^5.3.7",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "node": "^22.17.0",
@@ -10,7 +11,6 @@
   "version": "1.0.0",
   "description": "Blog App",
   "main": "index.js",
-  "devDependencies": {},
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
