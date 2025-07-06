@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Blogs</title>
-</head>
-<body>
-    <h1>All Blogs</h1>
-    <p><%=blog%></p>
+
     
-</body>
-</html>
+    <h1>All Blogs</h1>
+    <a href="/"><button>Go Home</button></a>
+    
+    <% if(allBlogs.length === 0){ %>
+        <p>No Blogs Submitted.</p>
+        <% }else{ %>
+            <% allBlogs.forEach((x, index) => { %>
+                <h2>Blog No <%= index + 1 %></h2>
+                <h4>Author Name : <%= x.author %></h4>
+                <p><%= x.blog %></p>
+                <a href="/blogs/edit/<%= index %>"><button>Edit</button></a>
+              <% })}; %>
+              
+    
